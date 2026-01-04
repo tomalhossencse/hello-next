@@ -5,7 +5,7 @@ const NotFound404 = () => {
   return (
     <div className="min-h-screen flex justify-center items-center flex-col gap-5">
       <h2>404 | Your page not found !</h2>
-      <Link href={"/"} className="underline">
+      <Link href={"/"} className="underline text-blue-500">
         Go to Home
       </Link>
     </div>
