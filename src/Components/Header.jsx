@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import NavLink from "./NavLink";
 const Header = () => {
   const pathname = usePathname();
   console.log(pathname);
@@ -11,11 +12,11 @@ const Header = () => {
       <Link href={"/"}>📘Dev-Story</Link>
 
       <nav className="space-x-5">
-        <Link href="/auth/login">Login</Link>
-        <Link href="/auth/register">Register</Link>
-        <Link href="/tutorials">Tutorials</Link>
-        <Link href="/about">About</Link>
-        <Link href="/stories">Stories</Link>
+        <NavLink href="/auth/login">Login</NavLink>
+        <NavLink href="/auth/register">Register</NavLink>
+        <NavLink href="/tutorials">Tutorials</NavLink>
+        <NavLink href="/about">About</NavLink>
+        <NavLink href="/stories">Stories</NavLink>
       </nav>
     </header>
   );
