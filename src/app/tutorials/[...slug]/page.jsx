@@ -2,8 +2,9 @@ import Title from "@/Components/Title";
 import React from "react";
 
 const TutorialsPage = async ({ params }) => {
-  const { technology, topic, pages, page_no, subject } = await params;
-  // console.log(result);
+  const { slug } = await params;
+  const [technology, topic, pages, page_no, subject] = slug;
+
   return (
     <div>
       <Title>{technology} Tutorials</Title>
